@@ -1,0 +1,51 @@
+`timescale 1ns/100ps
+
+module test_ex3;
+
+	reg Clock, Resetn, w1, w2;
+	wire Z;
+
+
+	ex3 uu (Clock, Resetn, w1, w2, Z);
+
+	always #5 Clock = ~Clock;
+
+	initial begin 
+		
+		Resetn=1;
+		Clock=0;
+		w1=1;
+		w2=1;
+		#50;
+
+		Resetn=0;
+		#50;
+
+		Resetn=1;
+		w1=1;
+		w2=0;
+		#50;
+
+		Resetn=0;
+		#50;
+
+		Resetn=1;
+		w1=0;
+		w2=0;
+		#50;
+
+		Resetn=0;
+		#50;
+
+		Resetn=1;
+		w1=0;
+		w2=1;
+		#50;
+
+		Resetn=0;
+		#50;
+		$stop();
+
+	end
+
+endmodule

@@ -1,0 +1,46 @@
+$date
+	Sat Nov 18 23:13:47 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_FlowRateCircuit $end
+$var wire 5 ! bits [4:0] $end
+$var reg 4 " flow_rate [3:0] $end
+$scope module uut $end
+$var wire 4 # flow_rate [3:0] $end
+$var reg 5 $ bits [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx $
+b0 #
+b0 "
+bx !
+$end
+#10
+b10 "
+b10 #
+#20
+b100 "
+b100 #
+#30
+b111 !
+b111 $
+b101 "
+b101 #
+#40
+b110 "
+b110 #
+#50
+b1000 "
+b1000 #
+#150
